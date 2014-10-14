@@ -22,3 +22,6 @@ The soft needs standard libraries, SDL-devel lib for GUI and ffmpeg (libavutil,l
 Make sure your firewall accepts UDP and TCP connections on relevant ports - i.e. 5557 for UDP and 5555 for TPC.
 The image bottom 8 rows part are incorrectly decoded - I have left them out for now.
 A simple application that allows drone control by a keyboard or a joystick, acquires drone sensory data and performs a simple image analysis.
+
+#####See also
+This application was created during our first experiments with <a href="http://purl.org/robotics/ardrone">AR Drone in the robotics domain</a>.
