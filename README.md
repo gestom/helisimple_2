@@ -14,7 +14,7 @@ If you have a joystick, buttons 7 and 5 takeoff and land, buttons 1-4 switch cam
 Axes 0-3 change angles and height.
 The code is commented inside, start with main/heli.cpp so see how it works. 
 
-##COMPILING
+####COMPILING
 Just type ''make'' in the src directory.
 The soft needs standard libraries, SDL-devel lib for GUI and ffmpeg (libavutil,libavcodec,libswscale,libz) for video processing.
 
