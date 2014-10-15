@@ -8,9 +8,9 @@
 extern "C" {
 #include <libavcodec/avcodec.h>
 #include <libswscale/swscale.h>
+#include <libavutil/avutil.h>
+#include <libavutil/mem.h>
 }
-
-#define INBUF_SIZE 8192
 
 typedef struct {
 	uint8_t signature[4];/*"PaVE" - used to identify the start of
@@ -71,7 +71,6 @@ private:
     AVFrame *picture;
     CRawImage *image;
     AVFrame *pictureRGB;
-    uint8_t inbuf[INBUF_SIZE];
     AVPacket avpkt;
     struct SwsContext *img_convert_ctx;
     int srcX,srcY,dstX,dstY;
